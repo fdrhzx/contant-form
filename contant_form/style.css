@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+*::after,
+*::before{
+	box-sizing: border-box;
+}
+:root{
+	--white: hsla(0,0%,95%,1.00);
+	--black:hsla(0,0%,5%,1.00);
+	--gray:hsla(0,0%,12%,1.00);
+	--green:hsla(155,39%,19%,1.00);
+	--green89: hsla(144,58%,70%,1.00);
+}
+@font-face{
+	font-family:karla;
+	src: url("font/Karla-Bold.ttf");
+}
+body{
+	font-family: karla;
+	background-color:var(--green89);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	
+}
+.form_container{
+	background-color: var(--white);
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow:  0 0 10px rgba(0, 0, 0, 0.1);
+	width: 500px;
+	margin: 50px;
+}
+.form_name{
+	display:flex;
+	align-items: center;
+}
+.fname label{
+	display: block;
+	margin-bottom: 5px;
+}
+.form_name input[type="text"]{
+	margin-right: 5px;
+}
+.form_email input[type="text"]{
+	width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.form_query input[type="radio"]{
+	border: 2px solid #000000;
+	outline: none;
+}
+.form_message textarea{
+	width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.btn{
+	background-color:var(--green);
+    color:var(--white);
+    padding: 12px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	width: 100%;
+}
+
+
+
+
+
+
+
+
